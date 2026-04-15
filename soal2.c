@@ -30,6 +30,7 @@ int main() {
 
     //looping dalam menghasilkan output sebanyak T 
     for (int i = 0; i < T; i++) {
+        //percobaan awal menggunakan while sebelum memindahkan dalam implementasi rekursi
         /*while (n != 1) {
             if (n % 2 == 0) {
                 n /= 2;
