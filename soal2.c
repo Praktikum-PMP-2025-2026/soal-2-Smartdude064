@@ -3,16 +3,16 @@
 
 // fungsi rekursi yang berguna dalam melakukan looping transformasi (algoritma utama)
 int recursion(int j, int n) {
+    if (n == 1) {
+        return j;
+    }
     if (n % 2 == 0) {
         n /= 2;
-        } else if (n % 2 != 0) {
-            n = 3*n + 1;
-        }
-        //printf("Iterasi ke-%d : %d\n", j+1, n);
-        j++;
-        if (n == 1) {
-            return j;
-        }
+    } else if (n % 2 != 0) {
+        n = 3*n + 1;
+    }
+    //printf("Iterasi ke-%d : %d\n", j+1, n);
+    j++;
     return recursion(j, n);
 }
 
